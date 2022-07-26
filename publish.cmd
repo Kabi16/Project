@@ -6,10 +6,10 @@
 @FOR %%A IN (%*) DO @IF "%%A"=="Release" @SET MODE=Release
 
 @SET SOLU="C:\Project\src\dotnetHelloWorld\dotnetHelloWorld.csproj"
-@SET PROFILE="C:\Project\src\dotnetHelloWorld\%MODE%\"
+@SET PROFILE="C:\Project\src\dotnetHelloWorld\%MODE%"
 
   
-@SET MSBUILDDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin
+@SET MSBUILDDIR="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin"
 
 @ECHO Hello Word Publishing to folder in %MODE% mode..
 @SET StartTime=%Time%
