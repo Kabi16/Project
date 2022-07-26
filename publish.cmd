@@ -15,7 +15,7 @@
 @SET StartTime=%Time%
 @ECHO %SOLU%
 @ECHO %PROFILE%
-@dotnet build %SOLU% /p:PublishProfile=Release /p:PackageLocation="%PROFILE%\package.zip" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:platform="Any CPU" /p:configuration="Release"
+@dotnet build %SOLU% /p:PublishProfile=Release /p:PackageLocation="%PROFILE%\package.zip" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:platform="Any CPU" /p:configuration="Debug"
 @SET EndTime=%Time%
 @SET BUILD_STATUS=%ERRORLEVEL% 
 @IF not %BUILD_STATUS%==0 goto fail 
